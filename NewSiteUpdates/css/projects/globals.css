@@ -1,0 +1,162 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(13, 17, 35);
+}
+
+.empty-space {
+    height: 0px;
+}
+
+.info-container {
+    width: 680px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo-ano-container {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.texto-ano {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(187, 195, 234);
+}
+
+.linha-ano {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lista-projetos-ano {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: rgb(45, 52, 88);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 40%;
+    height: 100%;
+    background-color: #E6F1FB;
+}
+
+.container-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #185FA5;
+}
+
+.size-6 {
+    width: 36px;
+    height: 36px;
+    color: #FFFFFF;
+    stroke: #FFFFFF;
+}
+
+.project-infos {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 0 0 60%;
+    height: 100%;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #185FA5;
+    flex: 0 0 60%;
+}
+
+.project-title h1 {
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    display: -webkit-box;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-size: clamp(11px, 1.5vw, 16px);
+    font-weight: 500;
+    line-height: 1.35;
+    color: #E6F1FB;
+    word-break: break-word;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.project-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    background-color: #0C447C;
+    gap: 4px;
+    flex: 0 0 40%;
+}
+
+.data-publicacao {
+    margin: 0;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: #85B7EB;
+    text-transform: uppercase;
+}
+
+.autores {
+    display: -webkit-box;
+    overflow: hidden;
+    margin: 0;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: #B5D4F4;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

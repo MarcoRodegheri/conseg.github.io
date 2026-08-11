@@ -1,0 +1,20 @@
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+
+}
+
+.logo-div picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
