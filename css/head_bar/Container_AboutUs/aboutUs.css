@@ -7,7 +7,7 @@
 }
 
 .resumo-blocoTexto {
-    background-image: url("../../../../imagens/resumo-texto-fundo.jpg");
+    background-image: url("../../../imagens/resumo-texto-fundo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

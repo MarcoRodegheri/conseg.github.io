@@ -1,103 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,maximum-scale=2">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <link rel="stylesheet" type="text/css" href="./css/responsivo.css">
+    <title>Projects | Conseg</title>
+    <link rel="shortcut icon" href="./icon/consegfavico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/projects/globals.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <title>Projects | CONSEG</title>
-  <link rel="shortcut icon" href="./icon/consegfavico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/head_bar/headBar.css">
+    <link rel="stylesheet" href="css/head_bar/container_logo/container.css">
+    <link rel="stylesheet" href="css/head_bar/container_logo/image.css">
+    <link rel="stylesheet" href="css/head_bar/container_logo/title.css">
+    <link rel="stylesheet" href="css/head_bar/container_buttons/container.css">
+    <link rel="stylesheet" href="css/head_bar/container_buttons/buttons.css">
+    <link rel="stylesheet" href="css/head_bar/container_buttons/git_logo.css">
+    <link rel="stylesheet" href="css/head_bar/Container_People/People.css">
+    <link rel="stylesheet" href="css/head_bar/Container_AboutUs/aboutUs.css">
+    <link rel="stylesheet" href="css/head_bar/Container_Topics/topics.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <style>
+        body {
+            position: relative;
+        }
+
+        #fundo-geral {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('./imagens/PlanoFundo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .info-bubble::before {
+            display: var(--arrow-display, block) !important;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
 
-    <img src="./imagens/icons/Conseg-Logo/azul.png" alt="Logo-do-site" id="consegimg" />
+    <div id="fundo-geral"></div>
 
-    <h1 class="gradient" id="conseg"><a class="logo" href="index.html">CONSEG</a></h1>
-
-
-
-    <nav>
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-
-
-
-      <ul class="nav-list">
-        <li id="lateral"><a href="index.html" id="menu">home</a></li>
-
-        <li id="lateral"> <a href="people.html" id="menu">People</a> </li>
-        <li id="lateral"> <a href="projects.html" id="menu">Projects</a></li>
-        <li id="lateral"> <a href="https://scholar.google.com/citations?user=rsiQlMgAAAAJ&hl=pt-BR&oi=ao"
-            id="menu">Publications</a></li>
-        <li id="lateral"><a id="forkme_banner" href="https://github.com/conseg/conseg.github.io"> <img
-              src="./imagens/icons/githubicon.png" id="forkme_banner"></a></li>
-      </ul>
-    </nav>
-  </header>
-  <script src="./Scripts/mobile-navbar.js"></script>
-  <main>
-    <div class="team">
-      <h1>Projects</h1>
-      <p> Here are some of ours projects</p>
+    <div class="head_bar">
+        <div class="logo_and_name">
+            <div class="logo-div">
+                <picture>
+                    <source media="(max-width: 1400px) and (max-height: 600px)" srcset="./imagens/icons/dev-icon-268.svg">
+                    <img class="logo logo-animada" src="./imagens/icons/Conseg-Logo/azul.png" alt="Logo CONSEG">
+                </picture>
+            </div>
+            <div class="name-div">
+                <div class="name">
+                    <span style="color: #2ebdf5;">CON</span><span style="color: #043e9e;">SEG</span>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <a class="head-button" href="index.html">HOME</a>
+            <a class="head-button" href="#people">PEOPLE</a>
+            <a class="head-button" href="projects.html">PROJECTS</a>
+            <a class="head-button" href="https://scholar.google.com/citations?user=rsiQlMgAAAAJ&hl=pt-BR&oi=ao" target="_blank">PUBLICATIONS</a>
+            <a class="github-link" href="https://github.com/conseg" target="_blank" rel="noopener noreferrer">
+                <img class="github-logo" src="./imagens/icons/github-brands-solid-full.svg" alt="GitHub Logo">
+            </a>
+        </div>
     </div>
 
-    <section class="projetos">
+    <div class="empty-space"></div>
 
+    <div class="people-title">
+        <h1 class="people-title-h1"> Projects</h1>
+    </div>
 
-      <div class="box">
-        <h3 class="project-title">speedy-chain</h3>
-        <p class="project-description">This is the source code for a blockchain prototype, designed to run on IoT
-          devices.</p>
-        <a href="https://github.com/conseg/speedychain/blob/master/API/README.md">Readme API</a>
-      </div>
-      <div class="box">
-        <h3 class="project-title">Tramonto Framework</h3>
-        <p class="project-description">A pentest management framework. The Tramonto's main objective is to solve
-          problems generated by the lack of methodologies for pentesting</p>
-        <a href="http://sbseg2016.ic.uff.br/pt/files/anais/completos/ST7-3.pdf">Readme the article</a>
-      </div>
+    <div class="info-container" id="info-container"></div>
 
+    <script src="projects.js"></script>
 
-
-
-      <div class="box">
-        <h3 class="project-title">Gps Tracker</h3>
-        <p class="project-description">This is an API with some functions that might help the user to keep a GPS Track
-          in Ethereum Blockchain.</p>
-        <a href="https://github.com/conseg/GPSTracker">Acess Github Page</a>
-      </div>
-    </section>
-  </main>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-
-
-  <footer>
-
-    <p id="footerp"><span> &#169; </span>CONSEG maintained by <a href="https://github.com/conseg">conseg</a></p>
-
-
-  </footer>
 </body>
 
 </html>
