@@ -1,8 +1,0 @@
-.logo_and_name {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    overflow: hidden;
-}
